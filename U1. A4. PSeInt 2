@@ -1,0 +1,23 @@
+Proceso Promedio_for
+    Escribir "Ingresa el nombre del alumn@ :"
+	leer nom
+	escribir "cuantas calificaciones va a ingresar : "
+	Leer n
+    Para i <- 1 Hasta n Hacer
+		Escribir "Ingrese la calificacion del 1 al 10 : "
+			Leer cal
+			scal=scal+cal
+			pro=scal/n
+		FinPara
+		Escribir " la promedio es : ",pro
+		Si pro > 6 Entonces
+			mj= " El alumno aprovo"
+		Sino 
+				mj= " El alumno necesita recursamiento"
+				
+			FinSi
+			si pro = 10 entonces 
+				mj= " El alumno es detacado"
+			fin si 
+		escribir"nombre alumno",nom " el promedio es :",pro, " Mensaje : ",mj
+FinProceso
